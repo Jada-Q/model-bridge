@@ -38,8 +38,11 @@ On top of that, Claude Code costs $50–100/month. If you have a Kimi Code subsc
 git clone https://github.com/Jada-Q/model-bridge
 cd model-bridge
 pnpm install
+# ⚠️  If you see "Ignored build scripts: better-sqlite3", run:
+#     cd node_modules/.pnpm/better-sqlite3@*/node_modules/better-sqlite3 && npm run build-release && cd -
 
 # 2. Add your Kimi API key
+# Get your key: kimi.com → Settings → API Key  (format: sk-kimi-...)
 cp .env.example .env
 # Edit .env → KIMI_API_KEY=sk-kimi-your-key
 
